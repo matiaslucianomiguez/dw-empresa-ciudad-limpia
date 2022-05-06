@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Vinculo mi archivo "servicios.html" a Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- Vinculo mi archivo "main.css" a mi archivo "servicios.html" -->
 
     <link rel="stylesheet" href="../main.css">
@@ -23,43 +27,66 @@
 </head>
 
 
-<body>  
-<header>
-    
-    <!-- Confecciono el header, incluyendo el logo, nombre y descripción breve de la empresa -->
+<body> 
 
-    <img src="../images/logo-ciudad-limpia.jpg" id="logo-ciudad-limpia" alt "Logo de la Empresa">
-    
-    <div>
-    
-        <h1>Ciudad Limpia</h1>
+<nav class="navbar navbar-expand-lg navbar-light">
 
-        <h2>Empresa de Servicios de Limpieza y Alquiler de Contenedores</h2>
-
-    </div>  
-    
-</header>
-    
-    
-<nav>
-    
-    <!-- Confecciono la barra de navegación con cinco hipervínculos a cada página web del sitio -->
-
-    <ul>
-     
-        <li><a href="../index.html">Página Principal</a></li>
+    <div class="container-fluid">
+        
+        <a class="h1" href="../index.html">Ciudad Limpia</a>
             
-        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-  
-        <li><a href="servicios.html">Servicios</a></li>
-               
-        <li><a href="precios.html">Precios</a></li>
+        <button class="navbar-toggler bg-success p-2 text-dark bg-opacity-50" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            
+        <div class="collapse navbar-collapse" id="navbarNav">
                 
-        <li><a href="contacto.html">Contacto</a></li>
-     
-    </ul>
+            <ul class="navbar-nav text-success">
+                
+                <li class="nav-item">
+                <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="precios.html">Precios</a>
+                </li>
+                
+                <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                
+            </ul>
+            
+        </div>
+        
+    </div>
     
 </nav>
+        
+        
+<header>
+        
+    <!-- Confecciono el header, incluyendo el logo, nombre y descripción breve de la empresa -->
+        
+    <img src="../images/logo-ciudad-limpia.jpg" id="logo-ciudad-limpia" alt "Logo de la Empresa">
+        
+    <div>
+            
+        <h1 class="h1">Cuidad Limpia</h1>
+            
+    </div>
+        
+    <div>
+        
+        <h2>Empresa de Servicios de Limpieza y Alquiler de Contenedores</h2>
+        
+    </div>
+            
+</header>
     
     
 <main>
@@ -77,66 +104,143 @@
     <div class="ordenar-servicios">
         
         <!-- Detallo los servicios ofrecidos por la empresa, incluyendo un subtítulo y una imagen ilustrativa para cada uno de ellos -->
-
-        <div>
-
-            <h4>Alquiler de Volquetes</h4>
-
-            <img src="../images/alquiler-volquete.jpg" class=imagenes-relevantes alt="Volquete" width="400px">
-        
-        </div>
-        
-        <div>
-            
-            <h4>Recolección de Escombros</h4>
-
-            <img src="../images/recoleccion-escombros.jpg" class=imagenes-relevantes alt="Recolección de Escombros" width="400px">
-        
-        </div>
-        
-        <div>
-            
-            <h4>Limpieza en General</h4>
-
-            <img src="../images/barrido-manual.jpg" class=imagenes-relevantes alt="Limpieza en General" width="400px">
-        
-        </div>
-        
-        <div>
-            
-            <h4>Limpieza de Muros</h4>
-
-            <img src="../images/limpieza-muros.jpg" class=imagenes-relevantes alt="Limpieza de Muros" width="250px">
-        
-        </div>
-
-    </div>
   
+        <div class="accordion" id="accordionExample">
+            
+            <div class="accordion-item">
+            
+                <h2 class="accordion-header" id="headingOne">
+            
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            
+                        <h4>Alquiler de Volquetes</h4>
+                                
+                    </button>
+            
+                </h2>
+            
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            
+                    <div class="accordion-body">
+            
+                        <img src="../images/alquiler-volquete.jpg" class="imagenes-relevantes" alt="Volquete">
+            
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingTwo">
+
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                        <h4>Recolección de Escombros</h4>
+
+                    </button>
+
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+
+                    <div class="accordion-body">
+
+                        <img src="../images/recoleccion-escombros.jpg" class="imagenes-relevantes" alt="Recolección de Escombros">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingThree">
+
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                        <h4>Limpieza en General</h4>
+                
+                    </button>
+
+                </h2>
+
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                
+                    <div class="accordion-body">
+                
+                        <img src="../images/barrido-manual.jpg" class="imagenes-relevantes" alt="Limpieza en General">
+                
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header" id="headingThree">
+
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+
+                        <h4>Limpieza de Muros</h4>
+                
+                    </button>
+
+                </h2>
+
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                
+                    <div class="accordion-body">
+                
+                        <img src="../images/limpieza-muros.jpg" class="imagenes-relevantes" alt="Limpieza de Muros">
+                
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
     <!-- Incluyo un hipervínculo de contacto a través de Whatsapp -->
 
     <div id="link-whatsapp">
 
         <p id="link-whatsapp-1">Hacé tu pedido por WhatsApp</p>
-        
+
         <a href="https://wa.me/+5492954551111" target=_blank> <img src="../images/logo-whatsapp.png" id=logo-whatsapp alt "Logo de WhatsApp"</a>
-        
+
     </div>
 
-
 </main>
-
 
 <footer>
 
     <!-- Incluyo los datos del desarrollador, y detallo las legislaciones que protegen sus derechos de autor -->
 
-    Sitio diseñado y desarrollado por: Matias Luciano Miguez
-        
-    <br>
-        
-    Todos los derechos reservados, según Legislación vigente de la República Argentina
+    <div class="row">
+
+        <div class="col">
+            
+            Sitio diseñado y desarrollado por: Matias Luciano Miguez
+    
+            <br>
+                
+            Todos los derechos reservados, según Legislación vigente de la República Argentina
+
+        </div>
+    
+    </div>
 
 </footer>
+
+<!-- Vinculo mi archivo "servicios.html" a Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
