@@ -51,27 +51,12 @@ header img {
     padding-bottom: 30px;
 }
 
-/* --------- <nav> --------- */
-
-/* Agrego formato a la barra de navegación
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    padding-left: 0;
-}
-
-nav li {
-    color: #008000a1;
-    font-size: 15px;
-    font-family: 'Oswald', sans-serif;
-}
-
-nav li a {
-    text-decoration: none;
-} */
-
 /* --------- <main> --------- */
+
+main {
+    padding-left: 20%;
+    padding-right: 20%;
+}
 
 /* Agrego formato a los títulos de las páginas secundarias (h3) */
 
@@ -79,6 +64,7 @@ h3 {
     color: black;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    padding-top: 10px;
 }
 
 /* Agrego formato a los subtítulos de las páginas secundarias (h4) */
@@ -88,6 +74,14 @@ h4 {
     text-decoration: underline;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 30px;
 }
 
 /* Agrego formato a los párrafos de las páginas web (p) */
@@ -120,18 +114,6 @@ form {
     font-family: 'Oswald', sans-serif;
 }
 
-/* --------- <footer> --------- */
-
-/*Agrego formato al footer*/
-
-footer {
-    text-align: center;
-    color: black;
-    font-size: 10px;
-    font-family: 'Oswald', sans-serif;
-    padding-bottom: 30px;
-}
-
 /* ----- CLASES ----- */
 
 /* Agrego formato a la clase "imagenes-relevante", aplicada a aquellas imagenes que deseen destacarse en el sitio web */
@@ -156,7 +138,7 @@ footer {
     padding: 10px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: space-around;  
 }
 
 .ordenar-servicios div {
@@ -168,6 +150,7 @@ footer {
     margin: 1px;
     text-align: center;
     line-height: 30px;
+    padding: 10px;
 }
 
 .ordenar-servicios div img {
@@ -178,10 +161,12 @@ footer {
 
 .ordenar-contacto {
     display: flex;
-    padding: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
 .ordenar-contacto div {
