@@ -1,0 +1,29 @@
+// Personalizo el "NAV" del sitio web
+
+// Inhabilito la propiedad "FLEX-GROW" en la clase para poder alinear los items de la "NAVBAR" hacia la derecha.
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+// Personalizo la "NAVBAR"
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 25px;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.h1 {
+    color: $color-company-primary;
+    font-size: 50px;
+    font-family: 'Lobster', cursive; 
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}

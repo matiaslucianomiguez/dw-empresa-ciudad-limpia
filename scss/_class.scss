@@ -1,0 +1,71 @@
+// Genero las "CLASES" utilizadas en el sitio web.
+
+// Aplico "FORMATO" y "ANIMACIONES" a la clase "IMAGENES-RELEVANTES".
+
+.imagenes-relevantes {
+    border: 3px solid black;
+    padding: 2px;
+    display: block;
+    margin: 0px auto;
+    width: 75%;
+    height: auto;
+
+    animation-name: fade-in-up;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+// Agrego "FORMATO" a la clase "P_CENTRADO".
+
+.p_centrado {
+    text-align: center;
+}
+
+// Agrego "FLEX-BOX" a la clase "ORDENAR-SERVICIOS" para organizar las imagenes de los servicios ofrecidos por la empresa.
+
+.ordenar-servicios {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+
+    div {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+        width: 450px;
+        margin: 1px;
+        text-align: center;
+        line-height: 30px;
+        padding: 10px;
+
+        img {
+            margin: 0px auto;
+        }
+    }
+}
+
+// Agrego "FLEX-BOX" a la clase "ORDENAR-CONTACTO" para organizar la página web "contacto.html".
+
+.ordenar-contacto {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    div {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+        width: 450px;
+        margin: 1px;
+        text-align: center;
+        line-height: 30px;
+    }
+}

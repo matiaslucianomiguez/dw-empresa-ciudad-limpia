@@ -1,0 +1,39 @@
+// Genero los "ID" utilizadas en el sitio web.
+
+// Agrego "FORMATO" y "ANIMACIONES" al logo de la Compañía.
+
+#logo-ciudad-limpia {
+    border: 3px solid black;
+    padding: 2px;
+    height: auto;
+    width: 35%;
+
+    animation-name: fade-in-down;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+// Agrego formato al logo de "WHATSAPP".
+
+#link-whatsapp {
+    text-align: right;
+    padding: 30px;
+}
+
+#link-whatsapp-1 {
+    color: black;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+}
+
+#logo-whatsapp {
+    width: 10%;
+    height: 10%;
+
+    &:hover {
+        animation-name: shake;
+        animation-timing-function: ease;
+        animation-duration: 2s;    
+    }
+}

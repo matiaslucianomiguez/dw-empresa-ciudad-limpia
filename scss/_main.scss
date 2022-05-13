@@ -1,0 +1,54 @@
+// Personalizo el "MAIN" del sitio web.
+
+// Agrego padding al "MAIN" del sitio web.
+
+main {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+// Agrego formato a los distintos "SUBTITULOS" (h3 y h4) del "MAIN" del sitio web.
+
+h3 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10px;
+}
+
+h4 {
+    color: black;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+// Agrego formato a los "PÁRRAFOS" (p) del "MAIN" del sitio web.
+
+p {
+    color: black;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify;    
+}
+
+// Agrego formato a las "TABLAS" del "MAIN" del sitio web.
+
+table {
+    margin: 0px auto;
+    text-align: center;
+
+    tr {
+        color: black;
+        font-size: 14px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+// Agrego formato a los "FORMULARIOS" del "MAIN" del sitio web.
+
+form {
+    color: black;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
