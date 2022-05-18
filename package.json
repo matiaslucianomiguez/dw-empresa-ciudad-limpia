@@ -1,23 +1,19 @@
 {
-  "name": "desafio-08",
+  "name": "dw-empresa-ciudad-limpia",
   "version": "1.0.0",
   "description": "El presente repositorio corresponde al alumno Matias Luciano Miguez, quien actualmente asiste al curso de Desarrollo Web en CODERHOUSE.",
   "main": "index.js",
-  "scripts": {
+    "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/compilador.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matiaslucianomiguez/dw-empresa-ciudad-limpia.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/matiaslucianomiguez/dw-empresa-ciudad-limpia/issues"
   },

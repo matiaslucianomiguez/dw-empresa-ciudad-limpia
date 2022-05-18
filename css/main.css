@@ -219,6 +219,33 @@ form {
   font-size: 14px;
   font-family: 'Oswald', sans-serif; }
 
+.red-social-facebook {
+  color: #003cff;
+  text-align: center;
+  font-weight: bold; }
+
+.red-social-instagram {
+  color: #a600ff;
+  text-align: center;
+  font-weight: bold; }
+
+.red-social-twitter {
+  color: #003cff76;
+  text-align: center;
+  font-weight: bold; }
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-evenly; }
+  .redes-sociales img {
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+    margin-right: 25px; }
+
 h5 {
   text-align: center;
   color: black;

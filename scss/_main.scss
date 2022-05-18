@@ -52,3 +52,40 @@ form {
     font-size: 14px;
     font-family: 'Oswald', sans-serif;
 }
+
+// Agrego un "MAPA" y un "EACH" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
+
+$redes-sociales: (
+    facebook: #003cff,
+    instagram: #a600ff,
+    twitter:#003cff76,
+);
+
+@each $red-social, $color in $redes-sociales{
+    .red-social-#{$red-social} {
+        color: $color;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+// Agrego un "MIXIN" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
+
+@mixin size-logos-redes-sociales {
+    height: 50px;
+    width: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+
+    img {
+        @include size-logos-redes-sociales
+    }    
+}
