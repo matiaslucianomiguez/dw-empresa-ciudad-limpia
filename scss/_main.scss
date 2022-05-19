@@ -35,9 +35,9 @@ p {
 // Agrego formato a las "TABLAS" del "MAIN" del sitio web.
 
 table {
+    @extend .p_centrado;
     margin: 0px auto;
-    text-align: center;
-
+    
     tr {
         color: black;
         font-size: 14px;
@@ -63,8 +63,8 @@ $redes-sociales: (
 
 @each $red-social, $color in $redes-sociales{
     .red-social-#{$red-social} {
+        @extend .p_centrado;
         color: $color;
-        text-align: center;
         font-weight: bold;
     }
 }
