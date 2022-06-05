@@ -1,8 +1,22 @@
 // Personalizo el "BODY" del sitio web.
 
-// Agrego imagen como "FONDO" del sitio web.
+// Versión Móvil (Mobile First)
 
-body {
-    background-image: url("../images/fondo-principal.jpg");
-    background-size: cover;
-}
+    // Agrego Fondo Al Sitio Web
+
+        body {
+            background: linear-gradient(0deg, rgba(74,189,109,1) 0%, rgba(193,223,205,1) 15%, rgba(240,255,246,1) 100%);
+        }
+
+// // Versión PC
+
+//     // Agrego Fondo Al Sitio Web
+
+//         @media screen and (min-width: 768px) {
+//             body {
+//                 background-image: url("../images/fondo-horizontal.png");
+//                 // background-image: none;
+//                 // background-color: aqua;
+//                 background-size: cover;
+//             }
+//         }

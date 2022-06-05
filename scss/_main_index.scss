@@ -1,0 +1,17 @@
+// Personalizo el "MAIN" de la Página "INDEX".
+
+// Versión Móvil (Mobile First)
+
+    // Personalizo la Imagen Principal
+
+        #camion-porta-volquetes {
+            border: 3px solid black;
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+            height: auto;
+        
+            animation-name: bounce-in-fwd;
+            animation-timing-function: ease;
+            animation-duration: 1.1s;
+        }

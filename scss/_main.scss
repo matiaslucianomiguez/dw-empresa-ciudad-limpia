@@ -1,91 +1,71 @@
-// Personalizo el "MAIN" del sitio web.
+// // Personalizo el "MAIN" del sitio web.
 
-// Agrego padding al "MAIN" del sitio web.
+// // Agrego padding al "MAIN" del sitio web.
 
 main {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-// Agrego formato a los distintos "SUBTITULOS" (h3 y h4) del "MAIN" del sitio web.
+// // Agrego formato a los distintos "SUBTITULOS" (h3 y h4) del "MAIN" del sitio web.
 
-h3 {
-    color: black;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    padding-top: 10px;
-}
+// h3 {
+//     color: black;
+//     font-size: 20px;
+//     font-family: 'Oswald', sans-serif;
+//     padding-top: 10px;
+// }
 
-h4 {
-    color: black;
-    text-decoration: underline;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-}
+// h4 {
+//     color: black;
+//     text-decoration: underline;
+//     font-size: 16px;
+//     font-family: 'Oswald', sans-serif;
+// }
 
-// Agrego formato a los "PÁRRAFOS" (p) del "MAIN" del sitio web.
+// // Agrego formato a los "PÁRRAFOS" (p) del "MAIN" del sitio web.
 
-p {
-    color: black;
-    font-size: 14px;
-    font-family: 'Oswald', sans-serif;
-    text-align: justify;    
-}
+// // p {
+// //     color: black;
+// //     font-size: 14px;
+// //     font-family: 'Oswald', sans-serif;
+// //     text-align: justify;    
+// // }
 
-// Agrego formato a las "TABLAS" del "MAIN" del sitio web.
+// // Agrego formato a las "TABLAS" del "MAIN" del sitio web.
 
-table {
-    @extend .p_centrado;
-    margin: 0px auto;
+// table {
+//     @extend .p_centrado;
+//     margin: 0px auto;
     
-    tr {
-        color: black;
-        font-size: 14px;
-        font-family: 'Oswald', sans-serif;
-    }
-}
+//     tr {
+//         color: black;
+//         font-size: 14px;
+//         font-family: 'Oswald', sans-serif;
+//     }
+// }
 
-// Agrego formato a los "FORMULARIOS" del "MAIN" del sitio web.
+// // Agrego formato a los "FORMULARIOS" del "MAIN" del sitio web.
 
-form {
-    color: black;
-    font-size: 14px;
-    font-family: 'Oswald', sans-serif;
-}
+// form {
+//     color: black;
+//     font-size: 14px;
+//     font-family: 'Oswald', sans-serif;
+// }
 
-// Agrego un "MAPA" y un "EACH" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
+// // Agrego un "MAPA" y un "EACH" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
 
-$redes-sociales: (
-    facebook: #003cff,
-    instagram: #a600ff,
-    twitter:#003cff76,
-);
+// $redes-sociales: (
+//     facebook: #003cff,
+//     instagram: #a600ff,
+//     twitter:#003cff76,
+// );
 
-@each $red-social, $color in $redes-sociales{
-    .red-social-#{$red-social} {
-        @extend .p_centrado;
-        color: $color;
-        font-weight: bold;
-    }
-}
+// @each $red-social, $color in $redes-sociales{
+//     .red-social-#{$red-social} {
+//         @extend .p_centrado;
+//         color: $color;
+//         font-weight: bold;
+//     }
+// }
 
-// Agrego un "MIXIN" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
-
-@mixin size-logos-redes-sociales {
-    height: 50px;
-    width: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.redes-sociales {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: space-evenly;
-
-    img {
-        @include size-logos-redes-sociales
-    }    
-}

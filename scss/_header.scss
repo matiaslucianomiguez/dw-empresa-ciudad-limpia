@@ -1,41 +1,52 @@
 // Personalizo el "HEADER" del sitio web.
 
-// Agrego formato al "TITULO PRINCIPAL" (h1) del "HEADER".
+    // Personalizo el Formato General
 
-h1 {
-    color: $color-company-primary;
-    font-size: 50px;
-    font-family: 'Lobster', cursive; 
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-}
+        header {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            grid-row-gap: 10px;
+            @extend .p_centrado;
+            justify-items: center;
+            justify-content: center;
+            padding: 30px;
 
-// Agrego formato al "TITULO SECUNDARIO" (h2) del "HEADER".
+            img {
+                margin: 0px auto;
+                padding-bottom: 30px;
+            }
+        }
 
-h2 {
-    color: black;
-    font-size: 18px;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-}
+    // Personalizo el Texto
 
-// Agrego "GRID" para organizar el "HEADER".
+        h1 {
+            color: $color-company-primary;
+            font-size: 50px;
+            font-family: 'Lobster', cursive; 
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
 
-header {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    grid-row-gap: 10px;
-    @extend .p_centrado;
-    justify-items: center;
-    justify-content: center;
-    padding: 30px;
-    
-    img {
-        margin: 0px auto;
-        padding-bottom: 30px;
-    }
-}
+        h2 {
+            color: black;
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+
+    // Personalizo el Logo de la Compañía
+
+        #logo-ciudad-limpia {
+            border: 3px solid black;
+            padding: 2px;
+            height: auto;
+            width: 35%;
+            
+            animation-name: bounce-in-left;
+            animation-timing-function: ease;
+            animation-duration: 1.1s;
+        }
