@@ -130,8 +130,12 @@ h2 {
   font-family: 'Oswald', sans-serif;
   margin-left: 25px; }
   .nav-link:hover {
-    transform: scale(1.3);
+    font-weight: bolder;
     transition: all 0.5s ease; }
+    @media screen and (min-width: 991px) {
+      .nav-link:hover {
+        transform: scale(1.3);
+        transition: all 0.5s ease; } }
 
 main {
   padding-left: 10%;
@@ -150,6 +154,8 @@ main {
   @media screen and (min-width: 991px) {
     main #container-p-sobre-nosotros p {
       font-size: 22px; } }
+  main .container-main-contacto section {
+    margin-bottom: 20px; }
   @media screen and (min-width: 991px) {
     main .container-main-contacto {
       display: grid;

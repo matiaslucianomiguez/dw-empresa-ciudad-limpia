@@ -35,6 +35,12 @@ main {
     }
 
     .container-main-contacto {
+        // Versión Móvil (Mobile First)
+        
+            section {
+                margin-bottom: 20px;
+            }
+
         // Versión PC
         
         @media screen and (min-width: 991px) {
