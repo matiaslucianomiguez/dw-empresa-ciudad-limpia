@@ -3,50 +3,82 @@
     // Personalizo el Formato General
 
         header {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto;
-            grid-row-gap: 10px;
-            @extend .p_centrado;
-            justify-items: center;
-            justify-content: center;
-            padding: 30px;
+            // Versión Móvil (Mobile First)
 
-            img {
-                margin: 0px auto;
-                padding-bottom: 30px;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto;
+                grid-row-gap: 10px;
+                @extend .p_centrado;
+                justify-items: center;
+                justify-content: center;
+                padding: 30px;
+
+                img {
+                    margin: 0px auto;
+                    padding-bottom: 30px;
+                }
+            
+            // Versión PC
+
+                @media screen and (min-width: 991px) {
+                    padding-bottom: 40px;
+                }
             }
-        }
 
-    // Personalizo el Texto
+    // Personalizo el Texto      
 
         h1 {
-            color: $color-company-primary;
-            font-size: 50px;
-            font-family: 'Lobster', cursive; 
-            text-align: center;
-            padding: 0px;
-            margin: 0px;
-        }
+            // Versión Móvil (Mobile First)
+                
+                color: $color-company-primary;
+                font-size: 50px;
+                font-family: 'Lobster', cursive; 
+                text-align: center;
+                padding: 0px;
+                margin: 0px;
+            
+            // Versión PC
+
+                @media screen and (min-width: 991px) {
+                    font-size: 500%;
+                }    
+            }
 
         h2 {
-            color: black;
-            font-size: 18px;
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-            padding: 0px;
-            margin: 0px;
-        }
+            // Versión Móvil (Mobile First)
+
+                color: black;
+                font-size: 18px;
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+                padding: 0px;
+                margin: 0px;
+
+            // Versión PC
+
+                @media screen and (min-width: 991px) {          
+                    font-size: 200%;
+                }
+            }
 
     // Personalizo el Logo de la Compañía
 
         #logo-ciudad-limpia {
-            border: 3px solid black;
-            padding: 2px;
-            height: auto;
-            width: 35%;
+            // Versión Móvil (Mobile First)
+
+                border: 3px solid black;
+                padding: 2px;
+                height: auto;
+                width: 35%;
+                
+                animation-name: bounce-in-left;
+                animation-timing-function: ease;
+                animation-duration: 2s;
             
-            animation-name: bounce-in-left;
-            animation-timing-function: ease;
-            animation-duration: 1.1s;
-        }
+            // Versión PC
+
+                @media screen and (min-width: 991px) {
+                    width: 50%;
+                }
+            }
