@@ -27,6 +27,10 @@ h3 {
     padding-top: 10px;
 }
 
+.p_centrado {
+    text-align: center;
+}
+
 // Personalizo las Imágenes del "MAIN".
 
 .imagenes-relevantes {
@@ -47,7 +51,7 @@ h4 {
     font-family: 'Oswald', sans-serif;
 }
 
-// Personalizo las "CARDS" del "MAIN" de la Solapa "SERVICIOS"
+// Personalizo las "CARDS" del "MAIN" de la solapa "SERVICIOS"
 
 .ordenar-servicios {
     display: flex;
@@ -86,14 +90,15 @@ h4 {
         padding: 20px;
         padding-bottom: 30px;
         text-align: center;
+        opacity: 0;
         
-        h4 {
+        .card.title {
             color: #fff;
             text-shadow: 1px 1px $color-company-primary, 2px 2px #000;
             opacity: 0;
         }
 
-        a {
+        .card-text {
             color: #fff;
             font-size: 14px;
             font-family: 'Oswald', sans-serif;
@@ -115,7 +120,11 @@ h4 {
         transition: all 1s ease;
     }
 
-    h4, a {
+    .card-body {
+        opacity: 1;
+    }
+
+    .card-title, .card-text {
         color: #fff;
         text-shadow: 1px 1px $color-company-primary, 2px 2px #000;
         opacity: 1;
@@ -124,8 +133,72 @@ h4 {
     }
 }
 
+// Personalizo las "TABLAS" del "MAIN" de la solapa "PRECIOS"
 
+table {
+    @extend .p_centrado;
+    margin: 0px auto;
+    border: #000 2px solid;
+    margin-top: 15px;
+    
+    tr {
+        color: black;
+        font-size: 14px;
+        font-family: 'Oswald', sans-serif;
+        border: #000 1px solid;
 
+        th {
+            font-weight: normal;
+            width: 150px;
+        }
+    }
+}
+
+// Agrego "FLEX-BOX" a la clase "ORDENAR-CONTACTO" para organizar la solapa "CONTACTO".
+
+.ordenar-contacto {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    // Agrego formato al "FORMULARIO" de la solapa "CONTACTO"
+    
+    div {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+        width: 450px;
+        margin: 1px;
+        text-align: center;
+        line-height: 30px;
+
+        form {
+            label {
+                display: block;
+                margin: 0.5em 0 0 0;
+            }
+
+            textarea {
+                width: 300px;
+            }
+
+            input {
+                width: 300px;
+            }
+
+            div {
+                display: flex;
+                gap: 10px;
+                width: 300px;
+            }
+        }
+    }
+}
 
 // // Agrego formato a los distintos "SUBTITULOS" (h3 y h4) del "MAIN" del sitio web.
 
@@ -137,24 +210,8 @@ h4 {
 
 // // Agrego formato a las "TABLAS" del "MAIN" del sitio web.
 
-// table {
-//     @extend .p_centrado;
-//     margin: 0px auto;
-    
-//     tr {
-//         color: black;
-//         font-size: 14px;
-//         font-family: 'Oswald', sans-serif;
-//     }
-// }
 
-// // Agrego formato a los "FORMULARIOS" del "MAIN" del sitio web.
 
-// form {
-//     color: black;
-//     font-size: 14px;
-//     font-family: 'Oswald', sans-serif;
-// }
 
 // // Agrego un "MAPA" y un "EACH" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
 
