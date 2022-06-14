@@ -1,6 +1,6 @@
-// Genero las "MEDIA QUERIES" utilizadas en el sitio web.
+// // Genero las "MEDIA QUERIES" utilizadas en el sitio web.
 
-// Agrego formato "FULL RESPONSIVE" al sitio web.
+// // Agrego formato "FULL RESPONSIVE" al sitio web.
 
 @media screen and (min-width: 768px) {
     #logo-ciudad-limpia {
@@ -9,11 +9,11 @@
     }
 
     h1 {
-        font-size: 72px;
+        font-size: $font-size-primary + 58px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: $font-size-primary + 10px;
     }
 
     nav li {

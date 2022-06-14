@@ -8,8 +8,8 @@ main {
         // Versión Móvil (Mobile First)
 
             color: black;
-            font-size: 14px;
-            font-family: 'Oswald', sans-serif;
+            font-size: $font-size-primary;
+            font-family: $font-primary;
             text-align: justify;
             
             span {
@@ -20,7 +20,7 @@ main {
         // Versión PC
     
             @media screen and (min-width: 991px) {          
-                font-size: 16px;
+                font-size: $font-size-primary + 2px;
             }
     }
 
@@ -29,7 +29,7 @@ main {
         
             @media screen and (min-width: 991px) {           
                 p {
-                    font-size: 22px;
+                    font-size: $font-size-primary + 8px;
                 }
             }
     }
@@ -56,8 +56,8 @@ h3 {
     // Versión Móvil (Mobile First)
 
         color: black;
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif;
+        font-size: $font-size-primary + 6px;
+        font-family: $font-primary;
         padding-top: 10px;
         text-align: center;
         margin-bottom: 18px;
@@ -74,13 +74,13 @@ h4 {
     // Versión Móvil (Mobile First)
 
         color: black;
-        font-size: 16px;
-        font-family: 'Oswald', sans-serif;
+        font-size: $font-size-primary + 2px;
+        font-family: $font-primary;
         
     // Versión PC
         
         @media screen and (min-width: 991px) {
-            font-size: 20px;
+            font-size: $font-size-primary + 6px;
         }
 }
 
@@ -172,8 +172,8 @@ h4 {
 
         .card-text {
             color: #fff;
-            font-size: 14px;
-            font-family: 'Oswald', sans-serif;
+            font-size: $font-size-primary;
+            font-family: $font-primary;
             text-decoration-line: none;
             text-shadow: 1px 1px $color-company-primary, 2px 2px #000;
             opacity: 0;
@@ -237,8 +237,8 @@ table {
     
     tr {
         color: black;
-        font-size: 14px;
-        font-family: 'Oswald', sans-serif;
+        font-size: $font-size-primary;
+        font-family: $font-primary;
         border: #000 1px solid;
 
         th {
@@ -264,8 +264,8 @@ table {
     div {
         color: black;
         text-decoration: none;
-        font-size: 16px;
-        font-family: 'Oswald', sans-serif;
+        font-size: $font-size-primary + 2px;
+        font-family: $font-primary;
         width: 450px;
         margin: 1px;
         text-align: center;
@@ -298,33 +298,3 @@ table {
         }
     }
 }
-
-// // Agrego formato a los distintos "SUBTITULOS" (h3 y h4) del "MAIN" del sitio web.
-
-// // Agrego formato a los "PÁRRAFOS" (p) del "MAIN" del sitio web.
-
-// // p {
- 
-// // }
-
-// // Agrego formato a las "TABLAS" del "MAIN" del sitio web.
-
-
-
-
-// // Agrego un "MAPA" y un "EACH" a la página "Contacto" para organizar los enlaces a las redes sociales de la empresa.
-
-// $redes-sociales: (
-//     facebook: #003cff,
-//     instagram: #a600ff,
-//     twitter:#003cff76,
-// );
-
-// @each $red-social, $color in $redes-sociales{
-//     .red-social-#{$red-social} {
-//         @extend .p_centrado;
-//         color: $color;
-//         font-weight: bold;
-//     }
-// }
-

@@ -9,8 +9,8 @@
 // Personalizo la "NAVBAR"
 
 .nav-link {
-    font-size: 22px;
-    font-family: 'Oswald', sans-serif;
+    font-size: $font-size-primary + 8px;
+    font-family: $font-primary;
     margin-left: 25px;
 
     &:hover{

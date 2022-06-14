@@ -32,8 +32,8 @@
             // Versión Móvil (Mobile First)
                 
                 color: $color-company-primary;
-                font-size: 50px;
-                font-family: 'Lobster', cursive; 
+                font-size: $font-size-primary + 36px;
+                font-family: $font-header;
                 text-align: center;
                 padding: 0px;
                 margin: 0px;
@@ -49,8 +49,8 @@
             // Versión Móvil (Mobile First)
 
                 color: black;
-                font-size: 18px;
-                font-family: 'Oswald', sans-serif;
+                font-size: $font-size-primary + 4px;
+                font-family: $font-primary;
                 text-align: center;
                 padding: 0px;
                 margin: 0px;
